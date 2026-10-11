@@ -39,7 +39,7 @@ html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
   --olive:#2A2E24;
   --sans:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Segoe UI Variable','Segoe UI','Malgun Gothic',system-ui,sans-serif;
   --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Noto Serif KR','Nanum Myeongjo',serif;
-  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,'Pretendard',monospace;
   --gut:clamp(24px,5.5vw,96px);
   --vgap:clamp(80px,10vw,160px);
 }
@@ -996,6 +996,11 @@ section[id],article[id]{scroll-margin-top:0}
   .vision-grid p.v-first{padding-top:22px}
 }
 
+/* ===== v22 type: Korean inside mono labels uses Pretendard ===== */
+.ko{font-family:var(--sans)!important;letter-spacing:-.005em!important;font-size:1.1em!important;text-transform:none;font-weight:600;display:inline!important;margin:0!important}
+.vision-grid p.v-first span{font-family:var(--sans);font-size:12px;letter-spacing:.01em;font-weight:700}
+.vision-grid p.v-first span .ko{font-size:1em!important}
+
 /* variant: addressee line */
 .c2-for{margin-top:22px;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--sub-dk);border:1px solid var(--line);padding:7px 12px}
 .c2-for b{color:var(--ink);font-weight:700}
@@ -1047,7 +1052,7 @@ section[id],article[id]{scroll-margin-top:0}
 <section class="impact" id="impact">
   <div class="wrap">
     <div class="impact-h rv">
-      <span class="mono">／ 핵심 성과</span>
+      <span class="mono">/ 핵심 성과</span>
       <h2>여섯 개의 숫자로 본<br><em>4년의 운영</em>.</h2>
     </div>
 
@@ -1096,7 +1101,7 @@ section[id],article[id]{scroll-margin-top:0}
 <section class="overview" id="works">
   <div class="wrap">
     <div class="overview-h rv">
-      <span class="mono">／ Contents</span>
+      <span class="mono">/ Contents</span>
       <h2>여섯 개 프로젝트,<br>하나의 <em>일하는 방식</em>.</h2>
     </div>
 
@@ -1164,7 +1169,7 @@ section[id],article[id]{scroll-margin-top:0}
 <section class="about" id="about">
   <div class="wrap">
     <div class="about-head rv">
-      <span class="mono">／ About</span>
+      <span class="mono">/ About</span>
       <h2><em>Profile.</em></h2>
     </div>
 
@@ -1188,7 +1193,7 @@ section[id],article[id]{scroll-margin-top:0}
 
     <div class="cv">
       <div class="cv-h rv">
-        <span class="mono">／ Credentials</span>
+        <span class="mono">/ Credentials</span>
         <div class="cv-title">Record.</div>
       </div>
 
@@ -1288,7 +1293,7 @@ section[id],article[id]{scroll-margin-top:0}
   <section class="case-body" data-run="Case 01 · 인사평가 제도 재설계">
     <div class="wrap">
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Context</span><span class="lbl-ko">Context.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Context</span><span class="lbl-ko">Context.</span></div>
         <div>
           <h4>평가는 <em>연 6회</em>, 마감 준수율은 40%대.</h4>
           <p style="max-width:46em;margin-top:16px">회차마다 반복되는 행정에 전 직종 공통 6개 기준이 겹쳐 결과의 설명력이 떨어졌고, 정규직과 최대 5개월 시차로 통합 의사결정도 어려웠습니다. 그래서 <b>횟수는 통합하고 기준은 직무별로 쪼개는</b> 반대 방향의 설계를 택했고, 줄인 회차에서 확보한 여력을 기준 세분화와 이의제기 절차 신설에 썼습니다.</p>
@@ -1296,13 +1301,13 @@ section[id],article[id]{scroll-margin-top:0}
             <div class="du-row">
               <span class="du-k">횟수</span>
               <div class="du-cell"><span class="du-lb">Before</span><span class="du-q"><i></i><i></i><i></i><i></i><i></i><i></i></span><b>연 6회</b></div>
-              <span class="du-ar dn">⟶</span>
+              <span class="du-ar dn">→</span>
               <div class="du-cell now"><span class="du-lb">After</span><span class="du-q"><i></i><i></i></span><b>연 2회 <small>상·하반기</small></b></div>
             </div>
             <div class="du-row">
               <span class="du-k">기준</span>
               <div class="du-cell"><span class="du-lb">Before</span><span class="du-q bars"><i></i><i></i><i></i><i></i><i></i><i></i></span><b>공통 6개</b></div>
-              <span class="du-ar up">⟶</span>
+              <span class="du-ar up">→</span>
               <div class="du-cell now"><span class="du-lb">After</span><span class="du-q bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="half"></i></span><b>직무별 9~10개</b></div>
             </div>
           </div>
@@ -1310,7 +1315,7 @@ section[id],article[id]{scroll-margin-top:0}
       </div>
 
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Design</span><span class="lbl-ko">Design.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Design</span><span class="lbl-ko">Design.</span></div>
         <div>
           <table class="dtab dtab-r">
             <tr><th>축</th><th>Before, As-is</th><th>After, 내가 바꾼 것</th></tr>
@@ -1322,7 +1327,7 @@ section[id],article[id]{scroll-margin-top:0}
       </div>
 
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Result</span><span class="lbl-ko">Result.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Result</span><span class="lbl-ko">Result.</span></div>
         <div>
           <div class="bignums">
             <div><span class="n">90<small>%대</small></span><span class="cap">마감 준수율</span><span class="ctx">기한 내 제출 부서 / 전체 평가 대상 부서</span></div>
@@ -1378,7 +1383,7 @@ section[id],article[id]{scroll-margin-top:0}
   <section class="case-body" data-run="Case 02 · 장애인 의무고용 관리">
     <div class="wrap">
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Context</span><span class="lbl-ko">Context.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Context</span><span class="lbl-ko">Context.</span></div>
         <div>
           <h4>법정 기준은 <em>3.6% → 3.8%</em>,<br>미달분은 <span class="hi-r">법인 부담</span>.</h4>
           <div class="essay">
@@ -1389,7 +1394,7 @@ section[id],article[id]{scroll-margin-top:0}
       </div>
 
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Growth</span><span class="lbl-ko">Growth.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Growth</span><span class="lbl-ko">Growth.</span></div>
         <div>
           <h4><em>+16명</em> 순증. 3년 연속 의무 고용인원 초과.</h4>
           <p class="viz-note">인원은 중증 2배 산정 기준입니다.</p>
@@ -1417,7 +1422,7 @@ section[id],article[id]{scroll-margin-top:0}
       </div>
 
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Impact</span><span class="lbl-ko">Impact.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Impact</span><span class="lbl-ko">Impact.</span></div>
         <div>
           <div class="hero-num">
             <div class="hn-pre">법인 통합신고 기준 · 고용부담금</div>
@@ -1438,7 +1443,7 @@ section[id],article[id]{scroll-margin-top:0}
       </div>
 
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Partnership</span><span class="lbl-ko">Partnership.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Partnership</span><span class="lbl-ko">Partnership.</span></div>
         <div>
           <h4>부담금을 줄이는 가장 확실한 방법은,<br><em>근무 가능한 인력</em>을 먼저 확보하는 것이었습니다.</h4>
           <p class="pa-lead">서울시 장애유형 맞춤형 특화일자리 사업의 근무처 연계협약을 <b>최초 기안부터 시행까지 단독 담당</b>했습니다. 서울시 · 서울시립발달장애인복지관과 병원을 연계해, 병원 부담 없이 매년 장애인 4명 내외를 안정적으로 배치하는 구조를 설계했습니다.</p>
@@ -1448,26 +1453,26 @@ section[id],article[id]{scroll-margin-top:0}
               <b>인건비 부담</b>
               <span>장애유형 맞춤형 특화일자리 사업</span>
             </div>
-            <div class="pd-arr"><span>인건비</span><i>⟶</i></div>
+            <div class="pd-arr"><span>인건비</span><i>→</i></div>
             <div class="pd-node hot">
               <span class="pd-k">병원 · 인사팀</span>
               <b>직무 발굴 · 배치</b>
               <span>약품 배송 · 키오스크 · 채혈실 안내</span>
             </div>
-            <div class="pd-arr"><i>⟵</i><span>직무지도</span></div>
+            <div class="pd-arr"><i>←</i><span>직무지도</span></div>
             <div class="pd-node">
               <span class="pd-k">서울시립발달장애인복지관</span>
               <b>현장 적응 지원</b>
               <span>전담인력 직무지도 연계</span>
             </div>
           </div>
-          <p class="pd-note">＋ 복지일자리사업을 함께 체결해, 특화일자리 참여자 배치 전까지 근무 공백이 없도록 연속성을 확보했습니다.</p>
+          <p class="pd-note">+ 복지일자리사업을 함께 체결해, 특화일자리 참여자 배치 전까지 근무 공백이 없도록 연속성을 확보했습니다.</p>
           <p class="pa-foot">2024년 최초 시행 이후 매년 갱신해 운영 중이며, 향후 <b>장애인 무기계약 채용을 위한 인력풀</b>의 기반이 되었습니다.</p>
         </div>
       </div>
 
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Approach</span><span class="lbl-ko">Three Fronts.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Approach</span><span class="lbl-ko">Three Fronts.</span></div>
         <div>
           <div class="flow">
             <div class="node"><span class="step-n">01, 채용</span><h5>10곳+ 유관기관 협업</h5><p>채용공고 공유, 구직자 추천 체계 구축. 등록·변경 절차 개선.</p></div>
@@ -1521,7 +1526,7 @@ section[id],article[id]{scroll-margin-top:0}
   <section class="case-body on-navy" data-run="Case 03 · 비정규직 처우 제도 정비">
     <div class="wrap">
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Context</span><span class="lbl-ko">Context.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Context</span><span class="lbl-ko">Context.</span></div>
         <div>
           <h4>기준 없이 처리되던 <em>비정규직 처우</em>를<br>지급 기준과 절차로 정리했습니다.</h4>
           <p style="max-width:46em;margin-top:16px">비정규직의 처우 격차 보전이 건별 판단에 맡겨져 누락과 형평성 논란의 소지가 있었습니다. 2026년 정부 처우개선 가이드라인 개정을 계기로, 지급 기준·심사·복직 운영을 문서화된 절차로 정비했습니다.</p>
@@ -1529,7 +1534,7 @@ section[id],article[id]{scroll-margin-top:0}
       </div>
 
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Three Axes</span><span class="lbl-ko">Three Axes.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Three Axes</span><span class="lbl-ko">Three Axes.</span></div>
         <div>
           <h4><em>공정수당</em>을 축으로, 심사와 복직 운영을 함께 정비했습니다.</h4>
           <div class="axes-grid">
@@ -1557,7 +1562,7 @@ section[id],article[id]{scroll-margin-top:0}
 
 
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Result</span><span class="lbl-ko">Result.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Result</span><span class="lbl-ko">Result.</span></div>
         <div>
           <div class="bignums b3n">
             <div><span class="n">3<small>종</small></span><span class="cap">제도 정비 축</span><span class="ctx">공정수당 · 사전심사제 · 복직 절차</span></div>
@@ -1626,7 +1631,7 @@ section[id],article[id]{scroll-margin-top:0}
   <section class="case-body" data-run="Case 04 · 채용 프로세스 개선">
     <div class="wrap">
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Breakdown</span><span class="lbl-ko">Decompose.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Breakdown</span><span class="lbl-ko">Decompose.</span></div>
         <div>
           <h4>세 가지 문제를 하나씩 쪼개 프로세스로 만들었습니다.</h4>
           <table class="dtab dtab-r">
@@ -1654,7 +1659,7 @@ section[id],article[id]{scroll-margin-top:0}
       </div>
 
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Reach</span><span class="lbl-ko">Reach.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Reach</span><span class="lbl-ko">Reach.</span></div>
         <div>
           <h4>유입은 <em>늘리고</em>, 이탈은 줄였습니다.</h4>
           <div class="viz-wrap">
@@ -1717,7 +1722,7 @@ section[id],article[id]{scroll-margin-top:0}
   <section class="case-body" data-run="Case 05 · 신규 PA 채용 체계">
     <div class="wrap">
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Approach</span><span class="lbl-ko">Approach.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Approach</span><span class="lbl-ko">Approach.</span></div>
         <div>
           <div class="ba">
             <div>
@@ -1735,7 +1740,7 @@ section[id],article[id]{scroll-margin-top:0}
       </div>
 
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Documents</span><span class="lbl-ko">Documents.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Documents</span><span class="lbl-ko">Documents.</span></div>
         <div>
           <h4>담당자가 바뀌어도 <em>같은 기준</em>으로 뽑을 수 있도록, 문서로 남겼습니다.</h4>
           <ol class="steps">
@@ -1768,7 +1773,7 @@ section[id],article[id]{scroll-margin-top:0}
       </div>
 
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Result</span><span class="lbl-ko">Result.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Result</span><span class="lbl-ko">Result.</span></div>
         <div>
           <div class="bignums">
             <div><span class="n">3<small>종</small></span><span class="cap">표준 문서</span><span class="ctx">JD · 평가 기준표 · 계약 템플릿</span></div>
@@ -1824,7 +1829,7 @@ section[id],article[id]{scroll-margin-top:0}
   <section class="case-body" data-run="Case 06 · 근태 데이터 검증 체계">
     <div class="wrap">
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Context</span><span class="lbl-ko">Context.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Context</span><span class="lbl-ko">Context.</span></div>
         <div>
           <h4>수기 전수 점검은 늦게 발견합니다.</h4>
           <p style="max-width:46em;margin-top:16px">연장근로·휴게·교대 데이터를 손으로 확인하는 한계로 <b>오류 발견이 늘 늦었습니다</b>. 사후 대응은 비용이고, 반복되면 분쟁이 됩니다.</p>
@@ -1832,7 +1837,7 @@ section[id],article[id]{scroll-margin-top:0}
       </div>
 
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Flow</span><span class="lbl-ko">Flow.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Flow</span><span class="lbl-ko">Flow.</span></div>
         <div>
           <h4>감지 → 협의 → 차단.</h4>
           <div class="flow" style="margin-top:28px">
@@ -1846,7 +1851,7 @@ section[id],article[id]{scroll-margin-top:0}
       </div>
 
       <div class="spread rv">
-        <div class="lbl-wrap"><span class="mono">／ Result</span><span class="lbl-ko">Result.</span></div>
+        <div class="lbl-wrap"><span class="mono">/ Result</span><span class="lbl-ko">Result.</span></div>
         <div>
           <div class="bignums">
             <div><span class="n">5,500<small>건</small></span><span class="cap">월 근태 검증</span><span class="ctx">연장근로 · 휴게 · 교대</span></div>
@@ -1868,7 +1873,7 @@ section[id],article[id]{scroll-margin-top:0}
 <section class="vision" id="vision">
   <div class="wrap">
     <div class="vision-head rv">
-      <span class="mono" style="color:var(--dark-sub)">／ Vision</span>
+      <span class="mono" style="color:var(--dark-sub)">/ Vision</span>
       <div class="vh-main">
         <h2><span class="ln"><span class="li" style="--l:0">사람에 대한 결정에</span></span><span class="ln"><span class="li" style="--l:1"><em>근거</em>를 더하는 HR.</span></span></h2>
         <p class="vh-lead">현대자동차그룹이 소프트웨어 중심의 모빌리티 기업으로 바뀌는 지금, 현대오토에버는 그 변화를 만드는 기술 인력이 모인 회사입니다. 이런 조직일수록 누구를 뽑고, 어떻게 평가하고, 어디에 배치할지에 대한 결정이 사업의 속도를 좌우한다고 생각합니다. 병원에서 제도를 만들고 숫자로 확인해 온 방식을, 현대오토에버의 인사 운영에서 아래 세 방향으로 쓰고 싶습니다.</p>
@@ -1913,6 +1918,20 @@ section[id],article[id]{scroll-margin-top:0}
   <div class="end-foot"><span>© 2026 Choi Hyoyeon · HR Portfolio</span><a href="#top">↑ Back to top</a></div>
 </section>
 
+<script>
+(function(){
+  var re=/[ㄱ-ㆎ가-힣]+(?:[\s·,()0-9~%]*[ㄱ-ㆎ가-힣]+)*/g, cache=new Map();
+  function mono(el){ if(cache.has(el)) return cache.get(el); var v=/^ui-monospace/.test(getComputedStyle(el).fontFamily); cache.set(el,v); return v; }
+  var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null), list=[], n;
+  while((n=w.nextNode())){ var p=n.parentNode; if(!p||p.nodeName==='SCRIPT'||p.nodeName==='STYLE'||(p.classList&&p.classList.contains('ko'))) continue; re.lastIndex=0; if(re.test(n.nodeValue)&&mono(p)) list.push(n); }
+  list.forEach(function(t){
+    var s=t.nodeValue, f=document.createDocumentFragment(), last=0, m; re.lastIndex=0;
+    while((m=re.exec(s))){ if(m.index>last) f.appendChild(document.createTextNode(s.slice(last,m.index))); var k=document.createElement('span'); k.className='ko'; k.textContent=m[0]; f.appendChild(k); last=m.index+m[0].length; }
+    if(last<s.length) f.appendChild(document.createTextNode(s.slice(last)));
+    t.parentNode.replaceChild(f,t);
+  });
+})();
+</script>
 <script>
 (function(){
   var els=document.querySelectorAll('.rv');
