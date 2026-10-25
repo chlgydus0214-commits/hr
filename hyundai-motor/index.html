@@ -1062,6 +1062,9 @@ section[id],article[id]{scroll-margin-top:0}
 .v-road li p{font-size:14.5px;line-height:1.7;color:rgba(247,245,242,.76)}
 @media (max-width:900px){.v-road{grid-template-columns:1fr;gap:24px}.v-road ol{grid-template-columns:1fr;gap:22px}.v-road{margin-top:44px;padding-top:32px}}
 .cv-row .yr.ko{font-family:var(--sans);font-size:11px;letter-spacing:0;font-weight:600}
+
+/* 2026-10-25 tone pass: case 03 results now two items */
+@media (min-width:521px){#case-03 .bignums.b3n{grid-template-columns:repeat(2,1fr)}}
 </style>
 <noscript><style>.rv{opacity:1 !important;transform:none !important}
 </style></noscript>
@@ -1129,7 +1132,7 @@ section[id],article[id]{scroll-margin-top:0}
         <span class="kpi-dom"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5.6c0 4 3 6.6 7 8.4 4-1.8 7-4.4 7-8.4V6z"/><path d="m9 12 2 2 4-4"/></svg><span class="kpi-dl">노무</span></span>
         <span class="kpi-n">0<small>건</small></span>
         <span class="kpi-l">노동분쟁 발생</span>
-        <span class="kpi-b">2023 · 2024 · 본인 담당 근태 검증 범위</span>
+        <span class="kpi-b">2023 · 2024 · 초과근무 · 주 52시간 관련</span>
       </div>
       <div class="kpi rv">
         <span class="kpi-dom"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="8" r="3.2"/><path d="M4 20c0-3.4 2.7-6 6-6 1.3 0 2.5.4 3.4 1"/><path d="M18 14v6M15 17h6"/></svg><span class="kpi-dl">채용</span></span>
@@ -1163,8 +1166,7 @@ section[id],article[id]{scroll-margin-top:0}
 
     <div class="overview-grid">
       <div class="overview-bio rv">
-        <p>숫자로 확인되지 않으면 제도는 조용히 무너집니다. 조직은 그 사실을 늦게 알아차립니다.</p>
-        <p>관찰 → 판단 → 설계 → 숫자로 증명.</p>
+        <p>케이스마다 처음 상황, 바꾼 것, 결과를 같은 순서로 적고, 숫자마다 집계 기준을 함께 밝혔습니다.</p>
       </div>
 
       <ol class="index-list">
@@ -1237,7 +1239,7 @@ section[id],article[id]{scroll-margin-top:0}
       </p>
 
       <div class="b2 rv">
-        <p>임직원 약 2,500명 규모의 공공의료기관에서 <b>평가 · 근태 · 채용 · 법정지표</b>를 한 사람이 동시에 맡아 왔습니다. 네 영역이 한 손에 있으면, 제도 하나를 바꿀 때 어디서 운영이 걸리는지 먼저 보이고 그 지점을 기준으로 설계하게 됩니다.</p>
+        <p>임직원 약 2,500명 규모의 공공의료기관에서 <b>평가 · 근태 · 채용 · 법정지표</b>를 한 사람이 동시에 맡아 왔습니다. 평가 시기를 바꾸면 재계약 검토와 채용 계획이 같이 움직였고, 근태 검출 규칙을 만들자 부서마다 그달 안에 정정하는 절차가 생겼습니다. 그래서 제도를 고칠 때는 이어진 업무부터 확인합니다.</p>
       </div>
 
       <div class="b3 rv">
@@ -1439,7 +1441,7 @@ section[id],article[id]{scroll-margin-top:0}
             <div><span class="n">0<small>개월</small></span><span class="cap">정규직 시점 격차</span><span class="ctx">5개월 → 0개월</span></div>
           </div>
           <p class="takeaway-line">
-            횟수를 줄이면 기준이 거칠어지고, 기준을 늘리면 운영이 무너집니다. 두 축을 같이 움직여야 평가가 결정의 근거가 됩니다.
+            평가 횟수를 줄여 생긴 여유를 직무별 기준과 이의제기 절차를 만드는 데 썼습니다.
           </p>
         </div>
       </div>
@@ -1548,7 +1550,7 @@ section[id],article[id]{scroll-margin-top:0}
       <div class="spread rv">
         <div class="lbl-wrap"><span class="mono">/ Partnership</span><span class="lbl-ko">Partnership.</span></div>
         <div>
-          <h4>부담금을 줄이는 가장 확실한 방법은,<br><em>근무 가능한 인력</em>을 먼저 확보하는 것이었습니다.</h4>
+          <h4>기준을 넘기려면 먼저<br><em>함께 일할 사람</em>을 꾸준히 찾을 경로가 필요했습니다.</h4>
           <p class="pa-lead">서울시 장애유형 맞춤형 특화일자리 사업의 근무처 연계협약을 <b>최초 기안부터 시행까지 단독 담당</b>했습니다. 서울시 · 서울시립발달장애인복지관과 병원을 연계해, 병원 부담 없이 매년 장애인 4명 내외를 안정적으로 배치하는 구조를 설계했습니다.</p>
           <div class="pdia">
             <div class="pd-node">
@@ -1584,7 +1586,7 @@ section[id],article[id]{scroll-margin-top:0}
             <span class="arr">→</span>
             <div class="node"><span class="step-n">03, 외부 인정</span><h5>장애인 취업사례집 수록</h5><p>서울시 장애인일자리 통합지원센터 「2024 장애인 취업사례집」에 채용 우수 담당자 인터뷰로 수록.</p></div>
           </div>
-          <p class="takeaway-line">의무고용률은 채용으로 한 번 채우는 숫자가 아니라, 재직이 유지돼야 지켜지는 지표였습니다. 인력 확보와 정착 설계에 같은 비중을 뒀습니다.</p>
+          <p class="takeaway-line">채용한 직원이 계속 일해야 다음 해 고용률도 유지되기 때문에, 채용만큼 정착 지원에 시간을 썼습니다.</p>
         </div>
       </div>
       <a class="next-link" href="#case-03"><span>Next · Case 03</span><span class="nx-ttl">비정규직 처우 제도</span><span class="nx-ar">↘</span></a>
@@ -1669,8 +1671,7 @@ section[id],article[id]{scroll-margin-top:0}
         <div>
           <div class="bignums b3n">
             <div><span class="n">3<small>종</small></span><span class="cap">제도 정비 축</span><span class="ctx">공정수당 · 사전심사제 · 복직 절차</span></div>
-            <div><span class="n">1<small>건</small></span><span class="cap">통합 안내 문서</span><span class="ctx">전사 공지 · 부서 준수 기준 명문화</span></div>
-            <div><span class="n">전사</span><span class="cap">적용 범위</span><span class="ctx">신규 휴직 · 대체인력 채용 건</span></div>
+                        <div><span class="n">전사</span><span class="cap">통합 운영지침 공지 · 적용 범위</span><span class="ctx">신규 휴직 · 대체인력 채용 건</span></div>
           </div>
           <div class="shift-strip">
             <div class="sh-box from">
@@ -1682,11 +1683,11 @@ section[id],article[id]{scroll-margin-top:0}
             <div class="sh-box to">
               <span class="sh-lab">TO-BE</span>
               <b>공정수당 신설 · 절차 문서화</b>
-              <span>통합 안내문 전사 공지 · 부서 준수 기준 명문화</span>
+              <span>통합 운영지침 전사 공지 · 부서 준수 기준 명문화</span>
             </div>
           </div>
           <p class="takeaway-line dark">
-            권고는 기관이 기준으로 옮기기 전까지 현장을 바꾸지 못합니다. 무엇을 어떤 기준으로 적용할지 정해 문서로 공지하는 데까지가 인사팀의 일이라고 봅니다.
+            공정수당 지급 기준과 심사·복직 절차를 한 지침에 담아 전사에 공지했습니다.
           </p>
         </div>
       </div>
@@ -1775,7 +1776,7 @@ section[id],article[id]{scroll-margin-top:0}
                 <span class="fs-delta">지원 완료율 <b>65.9% → 68.6%</b></span>
               </div>
             </div>
-          <p class="takeaway-line">채용은 한 번 잘 뽑는 일이 아니라 다음 전형이 더 쉬워지게 만드는 일이라고 봤습니다. 채널별 성과 관리와 ATS 콘텐츠 체계는 이후 전형에서도 그대로 쓰는 기준으로 남았고, 70여 건을 단독으로 운영할 수 있었던 것도 이 기준 덕분입니다.</p>
+          <p class="takeaway-line">채널별 성과 관리 방식과 새로 만든 ATS 채용 페이지는 이후 전형에서도 그대로 썼습니다. 70여 건을 혼자 운영할 수 있었던 것도 매번 처음부터 준비하지 않아도 됐기 때문입니다.</p>
           </div>
         </div>
       </div>
@@ -1879,7 +1880,7 @@ section[id],article[id]{scroll-margin-top:0}
             <div><span class="n">상시<br>갱신</span><span class="cap">문서 개정</span><span class="ctx">간호법 시행 · 업무 규칙 제정 반영</span></div>
           </div>
           <p class="takeaway-line">
-            정책이 바뀌는 중에도 운영 가능한 틀을 만듭니다. 사람이 아닌 문서에 기준을 남겼습니다.
+            법이 바뀔 때마다 세 문서를 함께 고쳐, 담당자가 바뀌어도 같은 기준으로 뽑을 수 있게 했습니다.
           </p>
         </div>
       </div>
@@ -1928,15 +1929,15 @@ section[id],article[id]{scroll-margin-top:0}
       <div class="spread rv">
         <div class="lbl-wrap"><span class="mono">/ Context</span><span class="lbl-ko">Context.</span></div>
         <div>
-          <h4>수기 전수 점검은 늦게 발견합니다.</h4>
-          <p style="max-width:46em;margin-top:16px">연장근로·휴게·교대 데이터를 손으로 확인하는 한계로 <b>오류 발견이 늘 늦었습니다</b>. 사후 대응은 비용이고, 반복되면 분쟁이 됩니다.</p>
+          <h4>손으로 점검하면 오류를 늦게 발견했습니다.</h4>
+          <p style="max-width:46em;margin-top:16px">연장근로·휴게·교대 데이터를 손으로 확인하는 한계로 <b>오류 발견이 늘 늦었습니다</b>.</p>
         </div>
       </div>
 
       <div class="spread rv">
         <div class="lbl-wrap"><span class="mono">/ Flow</span><span class="lbl-ko">Flow.</span></div>
         <div>
-          <h4>감지 → 협의 → 차단.</h4>
+          <h4>검출하고, 부서와 고치고, 편람에 남겼습니다.</h4>
           <div class="flow" style="margin-top:28px">
             <div class="node"><span class="step-n">01, 감지</span><h5>검출 조건 3종</h5><p>연장근로 주 12시간 초과 · 휴게 미부여 · 교대 연속 11시간 휴식 미확보를 HIS 자동 검출 조건으로 옮겨, 월 단위 전수 검출로 전환.</p></div>
             <span class="arr">→</span>
@@ -1953,7 +1954,7 @@ section[id],article[id]{scroll-margin-top:0}
           <div class="bignums">
             <div><span class="n">5,500<small>건</small></span><span class="cap">월 근태 검증</span><span class="ctx">연장근로 · 휴게 · 교대</span></div>
             <div><span class="n">3<small>종</small></span><span class="cap">자동 검출 조건</span><span class="ctx">HIS 기반 자동 검출</span></div>
-            <div><span class="n"><em>0</em><small>건</small></span><span class="cap">담당 기간 노동분쟁</span><span class="ctx">본인 담당 검증 범위</span></div>
+            <div><span class="n"><em>0</em><small>건</small></span><span class="cap">담당 기간 노동분쟁</span><span class="ctx">초과근무 · 주 52시간 관련</span></div>
             <div><span class="n">판례<br>반영</span><span class="cap">인사편람 개정</span><span class="ctx">반복 발생 원인 차단</span></div>
           </div>
           <p class="takeaway-line">
