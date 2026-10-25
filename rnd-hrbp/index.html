@@ -1125,6 +1125,9 @@ section[id],article[id]{scroll-margin-top:0}
 .case-cover[class*=ck] .cc-meta,.case-cover[class*=ck] .cc-foot{border-color:rgba(28,26,24,.22)}
 /* variant: case 05 table, narrow number column so the action text fits in two lines */
 @media (min-width:721px){.dtab-r td.k,.dtab-r th:first-child{width:44px;padding-right:12px}.dtab-r th:nth-child(2),.dtab-r td:nth-child(2){width:26%}.dtab-r th:nth-child(3),.dtab-r td:nth-child(3){width:44%}}
+/* variant: one-line fit heading */
+#fit .overview-h h2.h-one{white-space:nowrap;font-size:clamp(28px,5.2vw,72px)}
+@media (max-width:640px){#fit .overview-h h2.h-one{white-space:normal}}
 /* variant: three vision cards */
 .vision-grid h5{max-width:20em}
 .vision-grid p.v-first a{display:inline-block;margin-top:10px;color:#F0A48C;text-decoration:none;font-weight:600;font-size:13px}
@@ -1225,7 +1228,7 @@ section[id],article[id]{scroll-margin-top:0}
   <div class="wrap">
     <div class="overview-h rv">
       <span class="mono">/ 공고와 경험</span>
-      <h2>같은 일을,<br><em>다른 현장에서</em>.</h2>
+      <h2 class="h-one">공고의 업무와 <em>맞닿은 경험</em>.</h2>
     </div>
     <div class="overview-grid">
       <div class="overview-bio rv">
