@@ -1108,6 +1108,9 @@ section[id],article[id]{scroll-margin-top:0}
 .case-cover .page-mark{position:static;display:block;text-align:right;margin-top:14px;line-height:1}
 .md small{margin-left:8px;font-size:11px;color:var(--sub)}
 
+.nw{white-space:nowrap}
+/* fix: the one Korean year label matches the mono year column in size and colour */
+.cv .cv-row .yr.ko{font-size:11px!important;color:var(--sub)!important;letter-spacing:.02em!important}
 /* variant: requirements check */
 .req{margin-top:72px;padding-top:28px;border-top:1px solid var(--ink);display:grid;grid-template-columns:3fr 9fr;column-gap:var(--gut);row-gap:20px;align-items:start}
 .req-h .mono{display:block;color:var(--accent);margin-bottom:12px}
@@ -1123,9 +1126,10 @@ section[id],article[id]{scroll-margin-top:0}
 :root{--cover-bg:#D9D1C3}
 .case-cover[class*=ck] .cc-meta,.case-cover[class*=ck] .cc-foot{border-color:rgba(28,26,24,.22)}
 @media (min-width:721px){.dtab-r td.k,.dtab-r th:first-child{width:44px;padding-right:12px}.dtab-r th:nth-child(2),.dtab-r td:nth-child(2){width:26%}.dtab-r th:nth-child(3),.dtab-r td:nth-child(3){width:44%}}
-/* variant: three vision cards */
+/* variant: three vision cards, headings share a height so the body text starts on one line */
 .vision-grid h5{max-width:20em}
-.vision-grid p.v-first a{display:inline-block;margin-top:10px;color:#F0A48C;text-decoration:none;font-weight:600;font-size:13px}
+@media (min-width:1101px){.vision-grid h5{min-height:3.9em}}
+.vision-grid p.v-first a{display:block;width:max-content;margin-top:10px;color:#F0A48C;text-decoration:none;font-weight:600;font-size:13px}
 </style>
 <noscript><style>.rv{opacity:1 !important;transform:none !important}
 </style></noscript>
@@ -1233,7 +1237,7 @@ section[id],article[id]{scroll-margin-top:0}
       </div>
       <ol class="jd-list">
         <li class="rv">
-          <div class="jd-q"><span class="jd-n">01</span>상황에 맞는 인사 제도 · 운영 체계를 함께 설계</div>
+          <div class="jd-q"><span class="jd-n">01</span>상황에 맞는 인사 제도와 운영 체계를 함께 설계</div>
           <dl class="jd-a"><dt>문제</dt><dd>2026년 4월 정부 처우개선 가이드라인 개정. 정해진 병원 적용 기준이 없었고, 휴직 대체인력 복직 시점도 부서마다 달랐음</dd><dt>해결</dt><dd>병원에 맞는 적용 기준을 인사팀에서 정해 비정규직 공정수당을 신설. 사전심사제 위원 구성을 재편하고, 대체인력 복직은 휴직 승인 단계에서 예고하는 절차로 통일</dd><dt>변화</dt><dd class="jd-r">공정수당 · 심사 · 복직 기준을 <b>통합 운영지침</b>으로 전사 공지</dd></dl>
           <p class="jd-c"><a href="#case-06">Case 06<span>처우 제도 정비</span></a><a href="#case-01">Case 01<span>인사평가 재설계</span></a></p>
         </li>
@@ -1248,7 +1252,7 @@ section[id],article[id]{scroll-margin-top:0}
           <p class="jd-c"><a href="#case-03">Case 03<span>PA 채용 체계</span></a><a href="#case-06">Case 06<span>처우 제도 정비</span></a><a href="#case-05">Case 05<span>채용 프로세스</span></a></p>
         </li>
         <li class="rv">
-          <div class="jd-q"><span class="jd-n">04</span>투입 인력의 온보딩 · 배치 · 근태 · 이슈 대응</div>
+          <div class="jd-q"><span class="jd-n">04</span>투입 인력의 온보딩, 배치, 근태, 이슈 대응</div>
           <dl class="jd-a"><dt>문제</dt><dd>채용한 장애인 직원이 계속 일해야 다음 해 고용률도 유지되는 구조. 근태는 월 5,500건을 사람이 눈으로 점검해 위반을 지나서야 확인</dd><dt>해결</dt><dd>장애인 직원을 상시 면담해 근로지원인 제도 도입, 복지관 직무지도와 연계해 배치. 근태는 HIS 검출 조건 3종을 만들어 매달 부서와 먼저 정정. 신규 입사자 OT는 설문에서 더 알고 싶다고 나온 내용부터 반영</dd><dt>변화</dt><dd class="jd-r">근태 담당 기간(2023.02 ~ 2024.12) 초과근무 · 주 52시간 관련 노동분쟁 <b>0건</b></dd></dl>
           <p class="jd-c"><a href="#case-02">Case 02<span>장애인 의무고용</span></a><a href="#case-04">Case 04<span>근태 검증 체계</span></a></p>
         </li>
@@ -1269,8 +1273,8 @@ section[id],article[id]{scroll-margin-top:0}
         <li class="rv"><span class="rq-k">자격</span><span class="rq-t">열린 마인드로 유연하게 협업</span><span class="rq-d">PA 기준은 간호부 · 진료지원팀 실무책임자와 함께 정했고, 장애인 채용은 서울시 · 서울시립발달장애인복지관 등 유관기관 10곳 이상과 함께 운영했습니다.</span></li>
         <li class="rv"><span class="rq-k">자격</span><span class="rq-t">HRM 경력 3~10년</span><span class="rq-d">서울대학교병원 운영 보라매병원 인사팀 정규직, 2023.02부터 재직 중(3년 8개월)</span></li>
         <li class="rv"><span class="rq-k">자격</span><span class="rq-t">영업 파이프라인 안의 HR 이슈에 선제적으로 대응 계획</span><span class="rq-d">영업 파이프라인 안에서 일한 경험은 없습니다. 대신 법 개정 · 의무율 상향 · 가이드라인 개정처럼 정해진 일정이 오기 전에 채용 기준과 인력 경로, 운영 기준을 먼저 준비해 왔습니다.</span></li>
-        <li class="rv"><span class="rq-k">우대</span><span class="rq-t">인사 체계 · 보상 항목 설계 · 개선, 인력 구조와 함께 고려</span><span class="rq-d">평가를 연 6회에서 반기 2회로 통합하며 전담 인력을 5명에서 2명으로 줄였고, 비정규직 공정수당과 PA 근로조건 · 수당 기준을 신설했습니다.</span></li>
-        <li class="rv"><span class="rq-k">우대</span><span class="rq-t">다수 인력의 채용 · 배치 · 온보딩 · 안정화 직접 운영</span><span class="rq-d">BPO 경험은 없습니다. 병원에서 채용 전형 약 75건을 단독 운영해 300여 명을 채용했고, 장애인 직원은 배치 이후 면담과 근로지원인 연결로 정착까지 맡았습니다.</span></li>
+        <li class="rv"><span class="rq-k">우대</span><span class="rq-t">인사 체계&nbsp;· 보상 항목 설계&nbsp;· 개선, 인력 구조와 함께 고려</span><span class="rq-d">평가를 연 6회에서 반기 2회로 통합하며 전담 인력을 5명에서 2명으로 줄였고, 비정규직 공정수당과 PA 근로조건 · 수당 기준을 신설했습니다.</span></li>
+        <li class="rv"><span class="rq-k">우대</span><span class="rq-t">다수 인력의 채용&nbsp;· 배치&nbsp;· 온보딩&nbsp;· 안정화 직접 운영</span><span class="rq-d">BPO 경험은 없습니다. 병원에서 채용 전형 약 75건을 단독 운영해 300여 명을 채용했고, 장애인 직원은 배치 이후 면담과 근로지원인 연결로 정착까지 맡았습니다.</span></li>
       </ol>
     </div>
   </div>
@@ -1300,7 +1304,7 @@ section[id],article[id]{scroll-margin-top:0}
       <div class="b3 rv">
         <p>눈으로 확인하던 일을 규칙으로 옮기다가 데이터 분석(SQLD · ADsP)을 익혔고, 지금은 근태와 채용 기록을 지표로 읽어 제도를 고칠 근거로 씁니다.</p>
         <p>반복되는 문서 업무에는 AI를 씁니다. 채용공고 문구 점검과 면담 기록 정리, 정현원 정리가 그렇습니다. 신규 입사자 안내 자료도 AI로 관리해 복리후생이 바뀌면 바로 고치고, 설문에서 더 알고 싶다고 나온 내용을 OT에 가장 먼저 반영합니다.</p>
-        <p class="b-award"><span>2026</span>서울대학교병원 <b>개원기념 모범직원 표창</b>(병원장 표창) 수상</p>
+        <p class="b-award"><span>2026</span>서울대학교병원 <b>개원기념 모범직원 표창</b>(병원장&nbsp;표창)&nbsp;수상</p>
       </div>
     </div>
 
@@ -1320,7 +1324,7 @@ section[id],article[id]{scroll-margin-top:0}
         <div class="cv-row cv-hl rv">
           <span class="yr">2026</span>
           <span class="ttl">개원기념 모범직원 표창 <em class="hl-badge">병원장 표창</em></span>
-          <span class="sub">서울대학교병원장 명의 · 병원 최고 표창<br>2년 연속 부서 우수 직원 선정</span>
+          <span class="sub">서울대학교병원장 명의<br>병원 최고 표창<br>2년 연속 부서 우수 직원 선정</span>
           <span class="typ">수상</span>
         </div>
         <div class="cv-row rv">
@@ -1338,7 +1342,7 @@ section[id],article[id]{scroll-margin-top:0}
         <div class="cv-row rv">
           <span class="yr">2016 ~ 2022</span>
           <span class="ttl">고려대학교 미디어학부 졸업</span>
-          <span class="sub">만하임대학교 교환학기<br>전 과목 영어 수강 · 원문 자료 분석 발표</span>
+          <span class="sub">만하임대학교 교환학기<br>전 과목 영어 수강<br>원문 자료 분석 발표</span>
           <span class="typ">학력</span>
         </div>
         <div class="cv-row rv">
@@ -2053,23 +2057,23 @@ section[id],article[id]{scroll-margin-top:0}
       <div class="rv">
         <span class="v-ic"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="6" width="28" height="28"/><path d="M6 15h28M15 6v28"/><circle cx="15" cy="15" r="2.6"/></svg></span>
         <span class="mono">01, 인력 구조</span>
-        <h5>계약이 확정되기 전, 무엇을 기준으로 인력 규모와 직군을 그리는지</h5>
+        <h5>계약이 확정되기 전, 인력 규모와 직군을 무엇으로 정하는지</h5>
         <p>계약 규모와 시점이 정해지는 순간 채용은 이미 늦기 쉽습니다. 파이프라인 단계마다 <b>어떤 직군을 몇 명, 언제까지</b> 준비해야 하는지 기준이 있는지, 그 기준을 Sales Team과 어느 단계에서 맞추는지부터 확인하겠습니다.</p>
         <p class="v-first"><span>병원에서 다뤘던 비슷한 상황</span>간호법이 입법 논의 단계일 때 PA 직군을 따로 정의하고 직무기술서 · 평가표 · 계약서를 먼저 만들어, 연 15~20명을 처음부터 PA로 뽑았습니다. <a href="#case-03">Case 03 보기 ↘</a></p>
       </div>
       <div class="rv">
         <span class="v-ic"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 33h28"/><path d="M11 33V24M20 33V17M29 33V10"/><path d="m24 9 5-4 5 4"/></svg></span>
         <span class="mono">02, 보상 구조</span>
-        <h5>계약 단가 안에서 인건비와 복리후생 중 무엇을 고정하고 무엇을 조정하는지</h5>
+        <h5>계약 단가 안에서 보상의 무엇을 고정하고 무엇을 조정하는지</h5>
         <p>같은 토스 커뮤니티 안에서 계약마다 처우가 달라지면 설명할 근거가 필요합니다. 기존 토스씨엑스의 보상 기준 중 <b>계약과 상관없이 지킬 항목</b>과 계약별로 달라질 수 있는 항목이 어떻게 나뉘어 있는지 먼저 배우겠습니다.</p>
         <p class="v-first"><span>병원에서 다뤘던 비슷한 상황</span>정부 처우개선 가이드라인 개정에 맞춰 병원 적용 기준을 정하고 비정규직 공정수당을 신설해, 지급 기준을 통합 운영지침에 담았습니다. <a href="#case-06">Case 06 보기 ↘</a></p>
       </div>
       <div class="rv">
         <span class="v-ic"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 9h18v12H14l-7 5z"/><path d="M25 15h8v13l-5-3h-9v-4"/></svg></span>
         <span class="mono">03, 안정화 지표</span>
-        <h5>투입 이후 언제를 ‘안정화’로 보고, 어떤 숫자로 확인하는지</h5>
+        <h5>투입 이후 언제를 ‘안정화’로 보고 어떤 숫자로 확인하는지</h5>
         <p>채용한 인원이 계속 일해야 계약도 유지됩니다. 센터장과 같은 숫자를 보려면 <b>안정화의 정의와 지표</b>가 먼저 정해져 있어야 합니다. 계약 건마다 어떤 기록이 남고 있는지 확인하고, 다음 계약에 쓸 수 있는 형태로 정리하겠습니다.</p>
-        <p class="v-first"><span>병원에서 다뤘던 비슷한 상황</span>장애인 직원은 채용 이후 상시 면담과 근로지원인 연결로 정착까지 맡아 3년 연속 의무고용 기준을 넘겼고, 근태는 검출 규칙으로 매달 먼저 정정했습니다. <a href="#case-02">Case 02 보기 ↘</a></p>
+        <p class="v-first"><span>병원에서 다뤘던 비슷한 상황</span>장애인 직원은 채용 이후 상시 면담과 근로지원인 연결로 정착까지 맡아 3년 연속 의무고용 기준을 넘겼습니다. <a href="#case-02">Case 02 보기 ↘</a></p>
       </div>
     </div>
 
