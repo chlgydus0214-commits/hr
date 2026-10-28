@@ -1108,6 +1108,20 @@ section[id],article[id]{scroll-margin-top:0}
 .case-cover .page-mark{position:static;display:block;text-align:right;margin-top:14px;line-height:1}
 .md small{margin-left:8px;font-size:11px;color:var(--sub)}
 
+/* v7: tighter vertical rhythm, less dead space between blocks */
+:root{--vgap:clamp(44px,5vw,80px)}
+.impact{padding:clamp(52px,6vw,96px) 0}
+.impact-h{margin-bottom:clamp(28px,3.4vw,48px)}
+.about-head,.vision-head{padding-bottom:32px;margin-bottom:40px}
+.cv{margin-top:clamp(48px,5vw,72px);padding-top:32px}
+.req{margin-top:56px}
+.v-why{margin-top:56px}
+.v-plan{margin-top:48px}
+.end{padding:clamp(56px,6vw,96px) 0 32px}
+.end-foot{margin-top:48px}
+.case-body .spread:has(+ .next-link){border-bottom:0;margin-bottom:0;padding-bottom:12px}
+.next-link{margin-top:24px}
+@media (max-width:900px){.v-why{margin-top:40px}.v-plan{margin-top:36px}.req{margin-top:40px}.about-head,.vision-head{padding-bottom:24px;margin-bottom:28px}}
 .nw{white-space:nowrap}
 /* fix: the one Korean year label matches the mono year column in size and colour */
 .cv .cv-row .yr.ko{font-size:11px!important;color:var(--sub)!important;letter-spacing:.02em!important}
@@ -1265,15 +1279,14 @@ section[id],article[id]{scroll-margin-top:0}
     <div class="req rv">
       <div class="req-h">
         <span class="mono">자격요건 · 우대사항</span>
-        <p>요건마다 확인할 수 있는 이력을 적었고, 업종이 달라 해 보지 않은 일은 그렇다고 적었습니다.</p>
+        <p>요건마다 확인할 수 있는 이력과 숫자를 붙였습니다.</p>
       </div>
       <ol class="req-list">
         <li class="rv"><span class="rq-k">자격</span><span class="rq-t">정해진 체계를 그대로 쓰기보다 상황에 맞게 함께 설계</span><span class="rq-d">간호법 시행 전에 PA 채용 기준을 만들었고, 2026년 가이드라인 개정 때는 병원 적용 기준을 정해 공정수당을 신설했습니다.</span></li>
         <li class="rv"><span class="rq-k">자격</span><span class="rq-t">열린 마인드로 유연하게 협업</span><span class="rq-d">PA 기준은 간호부 · 진료지원팀과 함께 정했고, 장애인 채용은 유관기관 10곳 이상과 서울시 · 복지관 협약으로 경로를 넓혔습니다.</span></li>
         <li class="rv"><span class="rq-k">자격</span><span class="rq-t">HRM 경력 3~10년</span><span class="rq-d">서울대학교병원 운영 보라매병원 인사팀 정규직, 2023.02부터 재직 중(3년 8개월)</span></li>
-        <li class="rv"><span class="rq-k">자격</span><span class="rq-t">영업 파이프라인 안의 HR 이슈에 선제적으로 대응 계획</span><span class="rq-d">직접 경험은 없습니다. 가장 가까운 경험은 간호법 시행을 기다리지 않고 PA 채용 기준을 먼저 만든 일입니다.</span></li>
         <li class="rv"><span class="rq-k">우대</span><span class="rq-t">인사 체계&nbsp;· 보상 항목 설계&nbsp;· 개선, 인력 구조와 함께 고려</span><span class="rq-d">평가를 반기 2회로 통합해 전담 인력을 5명에서 2명으로 줄였고, 공정수당과 PA 수당 기준을 신설했습니다.</span></li>
-        <li class="rv"><span class="rq-k">우대</span><span class="rq-t">다수 인력의 채용&nbsp;· 배치&nbsp;· 온보딩&nbsp;· 안정화 직접 운영</span><span class="rq-d">BPO 경험은 없습니다. 전형 약 75건으로 300여 명을 채용했고, 장애인 직원은 면담과 근로지원인 연결로 정착까지 맡았습니다.</span></li>
+        <li class="rv"><span class="rq-k">우대</span><span class="rq-t">다수 인력의 채용&nbsp;· 배치&nbsp;· 온보딩&nbsp;· 안정화 직접 운영</span><span class="rq-d">전형 약 75건으로 300여 명을 채용했고, 장애인 직원은 면담과 근로지원인 연결로 정착까지 맡았습니다.</span></li>
       </ol>
     </div>
   </div>
