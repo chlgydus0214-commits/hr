@@ -1149,7 +1149,7 @@ section[id],article[id]{scroll-margin-top:0}
 <noscript><style>.rv{opacity:1 !important;transform:none !important}
 </style></noscript>
 <script>(function(){try{if(!window.matchMedia||!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("mo")}}catch(e){}})();</script>
-</head>
+<style>.nav{transition:background-color .25s ease,box-shadow .25s ease}.nav.is-solid{mix-blend-mode:normal;background:rgba(22,20,19,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.08)}</style></head>
 <body>
 
 <!-- NAV -->
@@ -2196,5 +2196,5 @@ section[id],article[id]{scroll-margin-top:0}
   });
 })();
 </script>
-</body>
+<script>(function(){var n=document.querySelector(".nav");if(!n)return;function f(){n.classList.toggle("is-solid",window.scrollY>24)}f();window.addEventListener("scroll",f,{passive:true})})();</script></body>
 </html>
